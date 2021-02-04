@@ -16,15 +16,5 @@ public class InstrumentationAgent {
 	 */
 	public static void premain(@SuppressWarnings("unused") String agentArgs, Instrumentation instrumentation) throws UnmodifiableClassException {
 		instrumentation.addTransformer(new TimeInstrumentationTransformer(), false);
-		
-		if (instrumentation.isRetransformClassesSupported()) {
-			Class<?>[] allLoadedClasses = instrumentation.getAllLoadedClasses();
-			for (int i = 0; i < allLoadedClasses.length; i++) {
-				Class<?> clazz = allLoadedClasses[i];
-				if (instrumentation.isModifiableClass(clazz)) {
-					instrumentation.retransformClasses(clazz);
-				}
-			}
-		}
 	}
 }
