@@ -1,12 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<artifactId>open-source-parent</artifactId>
-		<groupId>com.topdesk</groupId>
-		<version>1.2.0</version>
-	</parent>
+	<groupId>com.topdesk.model9</groupId>
 	<artifactId>time-transformer-agent</artifactId>
-	<version>1.2.2-SNAPSHOT</version>
+	<version>1.2.2</version>
 	<name>Time Transformer Agent</name>
 	<description>Instrumentation agent to change System.currentTimeMillis() and System.nanoTime() for testing purposes</description>
 
@@ -23,7 +19,7 @@
 		<connection>scm:git:git@github.com:TOPdesk/time-transformer-agent.git</connection>
 		<developerConnection>scm:git:git@github.com:TOPdesk/time-transformer-agent.git</developerConnection>
 		<url>https://github.com/topdesk/time-transformer-agent</url>
-		<tag>HEAD</tag>
+		<tag>time-transformer-agent-1.2.1</tag>
 	</scm>
 
 	<issueManagement>
